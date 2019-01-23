@@ -29,18 +29,20 @@ export default {
   },
   methods: {
     notAllow() {
+      // demo 1
       this.vueData.newKeyA = "keyA";
       console.log(this.vueData);
 
-      // or
+      // demo 2
       // Object.assign(this.vueData, { newKeyA: "keyA" });
       // console.log(this.vueData);
 
-      // or
+      // demo 3
       // this.vueData = Object.assign(this.vueData, { newKeyA: "keyA" });
       // console.log(this.vueData);
     },
     allow() {
+      // demo 1
       this.vueData = {
         ...this.vueData,
         newKeyA: "keyA"
